@@ -31,8 +31,10 @@ docker --version
 ```
 
 The command returned Docker version 29.6.2, confirming that the Docker command-line client is successfully installed.
+<img width="584" height="62" alt="1" src="https://github.com/user-attachments/assets/134f4baf-006c-4562-b1de-82d2458a3843" />
 
-<img width="276" height="26" alt="image" src="![alt text](image.png)" />
+
+
 
 
 
@@ -46,8 +48,7 @@ aws --version
 
 The output confirms AWS CLI version 2.36.10 is installed and running with Python 3.14.6 specifically within the WSL2 Ubuntu Linux environment.
 
-<img width="421" height="38" alt="image" src="![alt text](image-1.png)" />
-
+<img width="670" height="64" alt="2" src="https://github.com/user-attachments/assets/6d47ba90-d97a-4165-adc0-816051b418fe" />
 
 ### 3. kind
 
@@ -59,7 +60,7 @@ kind --version
 
 The output confirms that kind version 0.23.0 is installed and ready to use.
 
-<img width="262" height="24" alt="image" src="![alt text](image-2.png)" />
+<img width="584" height="62" alt="Screenshot 2026-08-05 042242" src="https://github.com/user-attachments/assets/c1c08c5f-476d-46d1-91ce-81d0bef45d04" />
 
 
 ### 4. kubectl
@@ -72,7 +73,8 @@ kubectl version --client
 
 The output confirms the kubectl client version v1.36.1 and Kustomize version v5.8.1 are successfully installed.
 
-<img width="325" height="41" alt="image" src="![alt text](image-3.png)" />
+<img width="256" height="71" alt="4" src="https://github.com/user-attachments/assets/e0e483a9-68e5-4d25-9138-67a0e040411f" />
+
 
 
 ### 5. Cryptographic and OTP utilities
@@ -85,7 +87,7 @@ openssl version
 
 The output confirms OpenSSL version 3.5.5 (built on 27 Jan 2026) is installed and operational.
 
-<img width="373" height="26" alt="image" src="![alt text](image-4.png)" />
+<img width="519" height="63" alt="5" src="https://github.com/user-attachments/assets/4660bd93-438c-4d79-89cd-07bc8babdedf" />
 
 
 ## Conclusion
