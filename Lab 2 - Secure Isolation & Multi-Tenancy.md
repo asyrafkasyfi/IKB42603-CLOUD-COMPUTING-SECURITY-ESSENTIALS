@@ -1,6 +1,6 @@
 # Secure Isolation & Multi-Tenancy
 
-**Name:** Muhammad Arif Shafira Bin Shahrin Amri  
+**Name:** Muhammad Asyraf kasyfi bin jafri  
 **Course:** IKB42603 Cloud Computing  
 **Lab:** Lab 2 — Secure Isolation and Multitenancy
 
@@ -34,8 +34,9 @@ Observed results:
 
 Evidence: 
 
-<img width="575" height="127" alt="Task 1 - a" src="https://github.com/user-attachments/assets/0669c39b-afb6-4227-a34d-400a0da6ed7a" />
-<img width="557" height="124" alt="Task 1 -b" src="https://github.com/user-attachments/assets/9523fb96-a2ca-4f3e-84e5-5d2f24172caf" />
+<img width="581" height="124" alt="image" src="https://github.com/user-attachments/assets/33fe9d76-5625-4541-883e-98f4c2d022ce" />
+
+<img width="577" height="131" alt="image" src="https://github.com/user-attachments/assets/5910f117-e4ea-4760-8604-7d369ba43bdc" />
 
 
 ## Task 2 — Demonstrate the default network behaviour
@@ -51,7 +52,8 @@ The request returned `HTTP 200`. This shows that namespaces alone do **not** res
 
 Evidence: 
 
-<img width="709" height="97" alt="Task 2" src="https://github.com/user-attachments/assets/661f4101-3e25-40f3-bd1a-3c34ffd5a6a4" />
+<img width="768" height="142" alt="image" src="https://github.com/user-attachments/assets/36275da7-02de-4362-9898-ab7cf1363b89" />
+
 
 
 ## Task 3 — Limit tenant resource consumption
@@ -74,7 +76,8 @@ Resource quotas prevent one tenant from exhausting shared cluster capacity and a
 
 Evidence: 
 
-<img width="507" height="160" alt="Task 3" src="https://github.com/user-attachments/assets/3f9067c0-346e-4e46-8353-5041e87d2c87" />
+<img width="509" height="164" alt="image" src="https://github.com/user-attachments/assets/19d7e300-0514-4ccb-bec5-3e54e6fe96b7" />
+
 
 
 ## Task 4 — Enforce default-deny ingress for tenant B
@@ -103,8 +106,10 @@ The empty `podSelector` selects every pod in `tenant-b`. Because no ingress rule
 
 Evidence: 
 
-<img width="550" height="203" alt="Task 4 - 1" src="https://github.com/user-attachments/assets/ca098c26-3bac-4e49-a2b4-a14741c0ba1a" />
-<img width="622" height="127" alt="Task 4 - Verify" src="https://github.com/user-attachments/assets/ed118240-86a3-44b9-bf08-6bf7e118dba0" />
+<img width="496" height="202" alt="image" src="https://github.com/user-attachments/assets/9c23c5e5-fbfe-4e44-99fe-ab40c2f1eb11" />
+
+<img width="728" height="126" alt="image" src="https://github.com/user-attachments/assets/60f79033-f675-4100-a0ab-98950fca966d" />
+
 
 
 ## Task 5 — Verify least-privilege RBAC
@@ -120,8 +125,10 @@ The service account was allowed to get secrets in `tenant-a` (`yes`) and denied 
 
 Evidence: 
 
-<img width="460" height="67" alt="Task 5 -1" src="https://github.com/user-attachments/assets/ab1a5b95-159a-448d-ae7b-2b6adc64f119" />
-<img width="461" height="65" alt="Task 5 - 2" src="https://github.com/user-attachments/assets/7fd99653-0b50-493c-a5aa-42007c19fc74" />
+<img width="479" height="50" alt="image" src="https://github.com/user-attachments/assets/507e6d64-1b29-4bb3-8fc1-ead9d2dd48ac" />
+<img width="462" height="73" alt="image" src="https://github.com/user-attachments/assets/68b2b198-3364-4508-b46f-ee66010147d1" />
+
+
 
 
 ## Task 6 — Remove sensitive data securely
@@ -147,8 +154,11 @@ The `dd` output confirms that 1,024 bytes were written and the command reported 
 
 Evidence:
 
-<img width="669" height="178" alt="Task 6 - 1" src="https://github.com/user-attachments/assets/b28da7b4-309f-4e47-972e-41b727f23a43" />
-<img width="678" height="166" alt="Task 6 - 2" src="https://github.com/user-attachments/assets/de9ae428-93fc-4180-9ed7-ec7c8895a52d" />
+<img width="620" height="86" alt="image" src="https://github.com/user-attachments/assets/1abf2660-16c6-4de8-915b-1c34c4e1eda5" />
+
+
+<img width="707" height="156" alt="image" src="https://github.com/user-attachments/assets/3b93a04c-f50f-4806-9424-b8c276b29f3c" />
+
  
 
 ## Final verification
@@ -162,7 +172,12 @@ kubectl describe resourcequota tenant-a-quota -n tenant-a
 
 Evidence: 
 
-<img width="509" height="242" alt="Verification Command" src="https://github.com/user-attachments/assets/841c37cd-59a6-4818-b703-36f1c6e74c45" />
+<img width="545" height="238" alt="image" src="https://github.com/user-attachments/assets/c16a404a-a304-4bf1-be2a-4abb2de4c7b2" />
+
+
+
+
+
 
 
 ## Cleanup and wrap-up
@@ -178,23 +193,23 @@ The output confirms deletion of the kind cluster and Docker volume.
 
 Evidence: 
 
-<img width="361" height="143" alt="Cleanup   Wrap Up" src="https://github.com/user-attachments/assets/ea0fb461-5d0a-456a-a323-9b3d084bf4f5" />
+<img width="363" height="95" alt="image" src="https://github.com/user-attachments/assets/15781623-5357-4118-8c68-ab08cc191891" />
 
 ## Short-answer question
 
 ### Question 1: Default Network Behavior & Risks
 **Why can containers in different namespaces reach each other by default, and why is that dangerous in multi-tenant cloud?**
 
-* **Reason:** Kubernetes uses an open, flat networking model by default where all pods across namespaces can communicate using direct IP addresses. Namespaces only provide logical grouping and administrative scopes, not network boundaries.
-* **Risk:** In a multi-tenant cloud, an attacker who compromises a container in Tenant A can freely perform lateral movement, scan internal networks, and access sensitive endpoints or services running in Tenant B on the same physical cluster.
+* **Reason:** By default, Kubernetes employs an open, flat networking approach that allows direct IP addresses to be used for communication across all pods across namespaces. Network borders are not provided by namespaces; they only offer administrative scopes and logical grouping.
+* **Risk:** An attacker can freely undertake lateral movement, monitor internal networks, and get access to sensitive endpoints or services operating in Tenant B on the same physical cluster in a multi-tenant cloud by breaching a container in Tenant A.
 
 ---
 
 ### Question 2: Default-Deny Principle & Network Policy
 **Explain the default-deny principle and how your Network Policy implements it.**
 
-* **Default-Deny Principle:** A Zero Trust security concept stating that all network traffic should be implicitly blocked unless an explicit rule permits it (least privilege access).
-* **Implementation:** The `default-deny-ingress` NetworkPolicy applies an empty `podSelector: {}` in `tenant-b` with `policyTypes: [Ingress]`. This selects all pods in that namespace and drops all incoming traffic that isn't explicitly whitelisted.
+* **Default-Deny Principle:**All network communication should be inherently denied unless an explicit rule allows it, according to the Zero Trust security principle (least privilege access).
+* **Implementation:** In `tenant-b`, the `default-deny-ingress` NetworkPolicy applies an empty `podSelector: {}` with `policyTypes: [Ingress]`. All inbound traffic that isn't specifically whitelisted is dropped, and all pods in that namespace are chosen.
 
 ---
 
@@ -211,8 +226,8 @@ Evidence:
 ### Question 4: Data Remanence & Cryptographic Erasure
 **What is data remanence, and why is cryptographic erasure the preferred cloud solution?**
 
-* **Data Remanence:** The residual physical or logical data that remains on underlying storage media after standard file deletion commands (like `rm`) are run.
-* **Why Cryptographic Erasure:** Cloud tenants do not have physical access or low-level block access to shared cloud storage drives, making physical destruction or overwrite wiping unfeasible. Cryptographic erasure encrypts data at rest and destroys the specific decryption keys, rendering the residual data on shared storage permanently unrecoverable.
+* **Data Remanence:** the remaining logical or physical data on underlying storage medium following the execution of normal file deletion commands (such as `rm`).
+* **Why Cryptographic Erasure:** Physical destruction or overwrite wiping is not possible since cloud tenants do not have low-level block access or physical access to shared cloud storage disks. Cryptographic erasure makes the remaining data on shared storage permanently unrecoverable by encrypting data while it is at rest and destroying the particular decryption keys.
 
 ---
 
